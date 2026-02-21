@@ -20,16 +20,9 @@ void main() {
 }
 
 String arabeVersRomain(int nombre) {
-  List<int> valeurs = [
-    1000, 900, 500, 400,
-    100, 90, 50, 40,
-    10, 9, 5, 4, 1
-  ];
+  List<int> valeurs = [1000, 900, 500, 400,100, 90, 50, 40,10, 9, 5, 4, 1];
 
-  List<String> symboles = [
-    "M", "CM", "D", "CD",
-    "C", "XC", "L", "XL",
-    "X", "IX", "V", "IV", "I"
+  List<String> symboles = ["M", "CM", "D", "CD","C", "XC", "L", "XL","X", "IX", "V", "IV", "I"
   ];
 
   String resultat = "";
@@ -45,15 +38,7 @@ String arabeVersRomain(int nombre) {
 }
 
 int romainVersArabe(String romain) {
-  Map<String, int> valeurs = {
-    "I": 1,
-    "V": 5,
-    "X": 10,
-    "L": 50,
-    "C": 100,
-    "D": 500,
-    "M": 1000
-  };
+  Map<String, int> valeurs = {"I": 1,"V": 5,"X": 10,"L": 50,"C": 100,"D": 500,"M": 1000};
 
   int total = 0;
   int prev = 0;
